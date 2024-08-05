@@ -1,3 +1,93 @@
+Twitter Clone Backend
+---------------------
+Assignment Overview
+--------------------
+This project is a simplified Twitter-like backend system built using Node.js and MongoDB. The backend provides functionalities for user registration, login, tweet posting, and fetching user timelines. The application uses JWT for authentication and follows basic Domain-Driven Design principles.
+
+How to Run the Application
+Clone the Repository:
+[git clone https://github.com/yourusername/twitter-clone.git](https://github.com/aNOnYMouS123478/Twitter-backend.git)
+cd twitter-clone
+
+Install Dependencies:
+Ensure you have Node.js installed. Then, install the required dependencies using:
+npm install
+Set Up Environment Variables:
+
+Create a .env file in the root directory of the project with the following content:
+PORT=3000
+MONGODB_URI=mongodb://localhost:27017/twitter-backend
+JWT_SECRET=your_jwt_secret
+Replace your_jwt_secret with a strong secret key for JWT.
+
+Start the Application:
+npm start
+The server will run on http://localhost:3000.
+
+Dependencies
+bcryptjs: For hashing passwords.
+body-parser: For parsing incoming request bodies.
+dotenv: For managing environment variables.
+express: Web framework for Node.js.
+jsonwebtoken: For generating and verifying JWT tokens.
+mongoose: For interacting with MongoDB.
+Installation Instructions
+Clone the Repository:
+git clone https://github.com/yourusername/twitter-clone.git
+Navigate to the Project Directory:
+
+cd twitter-clone
+Install Node.js and npm:
+
+Follow the installation instructions for Node.js to get npm (Node Package Manager) installed.
+
+Install Project Dependencies:
+npm install
+Configuration
+MongoDB Setup:
+
+Ensure MongoDB is running on your local machine. If not, you need to install and start MongoDB. The connection string is defined in the .env file under MONGODB_URI.
+
+Environment Variables:
+
+Set up your .env file with the appropriate values:
+
+env
+PORT=3000
+MONGODB_URI=mongodb://localhost:27017/twitter-backend
+JWT_SECRET=your_jwt_secret
+Testing
+Run Tests:
+
+If you have test scripts, you can run them using:
+
+npm test
+Make sure you have tests defined in your package.json under the scripts section.
+
+Issues and Troubleshooting
+MongoDB Connection Error:
+
+Ensure MongoDB is running and the connection string in .env is correct. You can check the status of MongoDB using:
+
+bash
+mongod
+If you see connection errors, verify that MongoDB is properly installed and running.
+
+JWT Authentication Issues:
+
+Make sure your JWT_SECRET in the .env file is correctly set and matches the secret used in your JWT functions.
+
+Dependency Issues:
+
+If you encounter issues with dependencies, try deleting node_modules and package-lock.json, then run:
+
+bash
+npm install
+
+
+
+
+
 API Documentation
 
 API Documentation
