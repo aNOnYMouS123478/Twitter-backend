@@ -8,9 +8,6 @@ Endpoints
 Endpoint: POST /api/users/register
 Description: Register a new user.
 Request Body:
-
-
-
 {
   "username": "string",
   "password": "string"
@@ -34,6 +31,7 @@ json
 {
   "error": "Error message"
 }
+
 2. User Login
 Endpoint: POST /api/users/login
 Description: Authenticate a user and return a JWT token.
@@ -63,6 +61,8 @@ json
 {
   "error": "Error message"
 }
+
+
 3. Post a Tweet
 Endpoint: POST /api/tweets
 Description: Post a new tweet. Requires authentication.
@@ -93,6 +93,8 @@ json
 {
   "error": "Error message"
 }
+
+
 4. Fetch User Timeline
 Endpoint: GET /api/users/:userId/timeline
 Description: Fetch the timeline of tweets for a specific user. Requires authentication.
@@ -123,6 +125,8 @@ json
 {
   "error": "Error message"
 }
+
+
 Authentication
 To interact with protected endpoints (like posting a tweet or fetching a timeline), you need to include a JWT token in the Authorization header:
 
