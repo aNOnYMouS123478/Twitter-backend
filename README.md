@@ -1,5 +1,5 @@
 API Documentation
--------------------
+
 API Documentation
 Base URL
 http://localhost:3000/api
@@ -9,8 +9,8 @@ Endpoint: POST /api/users/register
 Description: Register a new user.
 Request Body:
 
-json
------
+
+
 {
   "username": "string",
   "password": "string"
@@ -18,15 +18,13 @@ json
 Responses:
 201 Created:
 
-json
-------
+
 {
   "message": "User registered successfully"
 }
 400 Bad Request:
 
-json
------
+
 {
   "error": "Error message"
 }
@@ -104,7 +102,7 @@ URL Parameters:
 userId: The ID of the user whose timeline is being fetched.
 Responses:
 200 OK:
-json
+
 [
   {
     "_id": "tweet_id",
